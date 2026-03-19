@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body), sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display), serif;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    @apply text-[1rem] leading-8 text-muted;
+  }
+
+  ::selection {
+    background: rgba(176, 141, 114, 0.22);
+    color: #1c1c1c;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply py-20 sm:py-24;
+  }
+
+  .section-grid {
+    @apply mx-auto max-w-6xl px-6 md:px-8;
+  }
+
+  .editorial-card {
+    @apply rounded-[28px] border border-border/80 bg-white/90 shadow-card backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-soft;
+  }
+
+  .soft-label {
+    @apply inline-flex items-center rounded-full border border-border/70 bg-white/80 px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-muted;
+  }
+}
+
+@layer utilities {
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .bg-editorial-mesh {
+    background-image:
+      radial-gradient(circle at 12% 18%, rgba(176, 141, 114, 0.16), transparent 28%),
+      radial-gradient(circle at 86% 20%, rgba(214, 197, 181, 0.45), transparent 26%),
+      radial-gradient(circle at 50% 100%, rgba(220, 231, 224, 0.28), transparent 36%);
+  }
+
+  .bg-warm-panel {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(250, 250, 248, 0.96));
+  }
+}
