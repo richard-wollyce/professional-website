@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rogeria Santos Website
 
-## Getting Started
+Site institucional público de Rogeria Santos, desenvolvido com a stack atual do ecossistema Next.js e organizado para publicação em repositório público.
 
-First, run the development server:
+## Visão Geral
+
+- Projeto focado em conteúdo público do site
+- Sem dependência atual de variáveis de ambiente para rodar localmente
+- Estruturado com App Router
+- Conteúdo centralizado para facilitar manutenção textual
+
+## Tecnologias Atuais
+
+- Next.js 16.2.0
+- React 18
+- TypeScript 5
+- Tailwind CSS 3
+- ESLint 9 com Flat Config
+- Radix UI
+- Framer Motion
+- Turbopack como pipeline padrão de desenvolvimento e build no Next 16
+
+## Requisitos
+
+- Node.js 20.9+
+- npm 10+
+
+## Estrutura do Projeto
+
+- `src/app`: layout global, metadados e rota principal
+- `src/components`: seções da página, componentes de layout e UI reutilizável
+- `src/lib/site-content.ts`: textos públicos, dados de contato e conteúdo institucional
+- `src/styles`: estilos globais
+- `public`: imagens e arquivos estáticos públicos
+
+## Desenvolvimento Local
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação ficará disponível em `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts Disponíveis
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev`: inicia o servidor de desenvolvimento
+- `npm run build`: gera a build de produção
+- `npm run start`: executa a build em modo produção
+- `npm run lint`: roda a análise estática com ESLint
 
-## Learn More
+## Convenções do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+- O conteúdo institucional do site deve ser mantido preferencialmente em `src/lib/site-content.ts`.
+- Imagens públicas do site devem ficar em `public/`.
+- Componentes de interface devem permanecer desacoplados do conteúdo sempre que possível.
+- Alterações de documentação devem refletir a stack real do projeto.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Cuidados Para Repositório Público
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Versionar apenas arquivos que podem ser públicos.
+- Não subir currículos, planejamentos, briefs, materiais internos ou documentos de trabalho.
+- Guardar segredos apenas em arquivos locais `.env`, que já estão ignorados pelo Git.
+- Revisar imagens antes do commit para evitar metadados ou conteúdo não intencional.
 
-## Deploy on Vercel
+## Observação
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este repositório documenta o projeto e sua estrutura técnica, sem assumir uma plataforma específica de hospedagem ou deploy.
