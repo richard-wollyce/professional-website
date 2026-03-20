@@ -22,7 +22,7 @@ Site institucional público de Rogeria Santos, desenvolvido com a stack atual do
 
 ## Requisitos
 
-- Node.js 20.9+
+- Node.js 20.19+
 - npm 10+
 
 ## Estrutura do Projeto
