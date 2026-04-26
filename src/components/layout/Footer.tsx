@@ -65,7 +65,7 @@ export function Footer() {
               <a
                 href={siteContent.contact.instagramHref}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="flex items-start gap-3 transition-colors hover:text-white"
               >
                 <Instagram className="mt-0.5 h-4 w-4 shrink-0" />

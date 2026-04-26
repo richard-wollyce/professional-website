@@ -7,7 +7,7 @@ export function WhatsAppButton() {
     <a
       href={siteContent.contact.whatsappHref}
       target="_blank"
-      rel="noreferrer"
+      rel="noopener noreferrer"
       aria-label="Agendar atendimento pelo WhatsApp"
       className="fixed bottom-5 right-5 z-40 inline-flex items-center gap-3 rounded-full bg-whatsapp px-5 py-3 text-sm font-semibold text-white shadow-soft transition-transform hover:scale-[1.02] animate-soft-pulse"
     >

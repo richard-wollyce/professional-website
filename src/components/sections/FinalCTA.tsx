@@ -22,7 +22,7 @@ export function FinalCTA() {
               <a
                 href={siteContent.contact.whatsappHref}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 {siteContent.finalCta.button}
               </a>

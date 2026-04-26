@@ -32,7 +32,7 @@ export function Hero() {
               <a
                 href={siteContent.contact.whatsappHref}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 {siteContent.hero.primaryCta}
               </a>

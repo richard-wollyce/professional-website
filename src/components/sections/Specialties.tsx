@@ -35,7 +35,7 @@ export function Specialties() {
             <a
               href={siteContent.contact.whatsappHref}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               {siteContent.specialties.cta}
               <ArrowRight className="ml-2 h-4 w-4" />

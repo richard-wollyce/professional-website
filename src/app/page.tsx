@@ -76,12 +76,16 @@ const jsonLd = {
   ],
 };
 
+function serializeJsonLd(data: typeof jsonLd) {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}
+
 export default function Home() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
       />
       <Header />
       <main id="top">
